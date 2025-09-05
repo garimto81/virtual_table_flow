@@ -55,26 +55,44 @@
             <div class="max-w-4xl mx-auto">
                 <div class="strategy-phase pl-12 md:pl-16"><div class="phase-marker"><i data-lucide="search" class="w-6 h-6 text-slate-500"></i></div><div class="mb-8"><h2 class="text-3xl font-bold">국면 1: 초반 탐색 구간</h2><p class="text-slate-500 font-medium">10/16 (Day 1A/1B), 10/17 (Day 1C)</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8"><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-red-600 mt-1">높음</p></div><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-orange-500 mt-1">낮음</p></div><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">키 플레이어 캐릭터 빌딩</p></div></div><div class="grid grid-cols-1 lg:grid-cols-2 gap-6"><div><h4 class="text-xl font-bold mb-3"><i data-lucide="bar-chart-2" class="inline w-5 h-5 mr-2 text-emerald-600"></i>상황 분석 (Day 1 흐름)</h4>
                     <div class="bg-white p-4 rounded-md border text-slate-600">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex flex-col md:flex-row rounded-lg overflow-hidden border">
                             <!-- 1-1: Early Phase -->
-                            <div class="p-4 rounded-lg border bg-blue-50 border-blue-200 flex flex-col">
-                                <div class="flex items-center mb-3">
-                                    <i data-lucide="battery-full" class="w-8 h-8 text-blue-500 mr-3 flex-shrink-0"></i>
-                                    <h5 class="font-bold text-lg text-slate-800">1-1: 초반 레벨</h5>
+                            <div class="w-full md:w-1/2 p-4 bg-blue-50">
+                                <h5 class="font-bold text-lg text-blue-800 text-center mb-3">1-1: 초반 레벨</h5>
+                                <div class="space-y-4 text-sm">
+                                    <div class="flex items-center">
+                                        <i data-lucide="layers" class="w-8 h-8 text-blue-500 mr-3"></i>
+                                        <div><span class="font-semibold">스택:</span> 딥스택</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i data-lucide="glasses" class="w-8 h-8 text-blue-500 mr-3"></i>
+                                        <div><span class="font-semibold">플레이:</span> 단조로운 탐색전</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i data-lucide="thumbs-down" class="w-8 h-8 text-blue-500 mr-3"></i>
+                                        <div><span class="font-semibold">콘텐츠 가치:</span> 낮음</div>
+                                    </div>
                                 </div>
-                                <p class="text-sm text-slate-700 flex-grow">
-                                    대부분의 키 플레이어 후보군이 딥스택 상태이며, 액션은 많지만 단조로운 플레이가 주를 이룹니다. 촬영량은 많지만 실제 콘텐츠로 사용될 영상 비율은 낮습니다.
-                                </p>
+                                <p class="text-xs text-blue-700 mt-4 text-center bg-blue-100 p-2 rounded">촬영량은 많지만, 대부분 폐기될 가능성이 높음</p>
                             </div>
                             <!-- 1-2: Late Phase -->
-                            <div class="p-4 rounded-lg border bg-red-50 border-red-200 flex flex-col">
-                                <div class="flex items-center mb-3">
-                                     <i data-lucide="battery-warning" class="w-8 h-8 text-red-500 mr-3 flex-shrink-0"></i>
-                                    <h5 class="font-bold text-lg text-slate-800">1-2: 마지막 레벨</h5>
+                            <div class="w-full md:w-1/2 p-4 bg-red-50 border-t-2 md:border-t-0 md:border-l-2 border-dashed">
+                                <h5 class="font-bold text-lg text-red-800 text-center mb-3">1-2: 마지막 레벨</h5>
+                                <div class="space-y-4 text-sm">
+                                    <div class="flex items-center">
+                                        <i data-lucide="layer-2" class="w-8 h-8 text-red-500 mr-3"></i>
+                                        <div><span class="font-semibold">스택:</span> 숏스택 (~20BB)</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i data-lucide="zap" class="w-8 h-8 text-red-500 mr-3"></i>
+                                        <div><span class="font-semibold">플레이:</span> 올인/셔브 생존 경쟁</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i data-lucide="thumbs-up" class="w-8 h-8 text-red-500 mr-3"></i>
+                                        <div><span class="font-semibold">콘텐츠 가치:</span> 높음</div>
+                                    </div>
                                 </div>
-                                <p class="text-sm text-slate-700 flex-grow">
-                                    Day 1 후반부, 특히 마지막 레벨이 되면 평균 스택이 약 20BB 내외로 줄어듭니다. 키 플레이어 후보군들은 생존을 위해 올인(All-in) 또는 셔브(Shove) 찬스를 적극적으로 노리게 되므로, 이 결정적인 순간들을 놓치지 않고 촬영하는 것이 매우 중요해집니다.
-                                </p>
+                                 <p class="text-xs text-red-700 mt-4 text-center bg-red-100 p-2 rounded">모든 올인(All-in) 순간이 결정적인 콘텐츠가 됨</p>
                             </div>
                         </div>
                     </div>
