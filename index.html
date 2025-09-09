@@ -1,58 +1,101 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>버추얼 테이블 프로젝트 - 대회 단계별 촬영 전략</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-        html {
-            font-family: 'Noto Sans KR', sans-serif;
-            background-color: #f0f2f5;
-            color: #1e293b;
-        }
-        .section-title {
-            font-weight: 900;
-            color: #047857; /* Emerald-700 for main titles */
-        }
-        /* Strategy Map Styles */
-        .strategy-phase { position: relative; padding: 2.5rem 0; border-left: 3px solid #e2e8f0; }
-        .strategy-phase:last-child { border-left: 3px solid transparent; }
-        .phase-marker {
-            position: absolute; left: -1.2rem; top: 2.5rem; width: 2.25rem; height: 2.25rem;
-            background-color: white; border-radius: 9999px; display: flex;
-            align-items: center; justify-content: center; border: 3px solid #64748b;
-        }
-        .kpi-card { background-color: white; border-radius: 0.5rem; padding: 1rem; border: 1px solid #e2e8f0; box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); }
-    </style>
-</head>
-<body class="antialiased">
-
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <!-- Section 3: Strategy Map -->
-        <section id="strategy">
-            <h2 class="section-title text-3xl text-center mb-12">대회 단계별 촬영 전략 맵</h2>
-            
-            <div class="max-w-4xl mx-auto mb-12 bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-lg shadow">
-                <div class="flex">
-                    <div class="flex-shrink-0">
-                        <i data-lucide="star" class="h-6 w-6 text-amber-500"></i>
+<!DOCTYPE html><html lang="ko"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>버추얼 테이블 프로젝트 - 대회 단계별 촬영 전략</title>    <script src="https://cdn.tailwindcss.com"></script>    <script src="https://unpkg.com/lucide@latest"></script>    <link rel="preconnect" href="https://fonts.googleapis.com">    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">    <style>        html {            font-family: 'Noto Sans KR', sans-serif;            background-color: #f0f2f5;            color: #1e293b;        }        .section-title {            font-weight: 900;            color: #047857; /* Emerald-700 for main titles */        }        /* Strategy Map Styles */        .strategy-phase { position: relative; padding: 2.5rem 0; border-left: 3px solid #e2e8f0; }        .strategy-phase:last-child { border-left: 3px solid transparent; }        .phase-marker {            position: absolute; left: -1.2rem; top: 2.5rem; width: 2.25rem; height: 2.25rem;            background-color: white; border-radius: 9999px; display: flex;            align-items: center; justify-content: center; border: 3px solid #64748b;        }        .kpi-card { background-color: white; border-radius: 0.5rem; padding: 1rem; border: 1px solid #e2e8f0; box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); }    </style></head><body class="antialiased">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">        <!-- Section 3: Strategy Map -->        <section id="strategy">            <h2 class="section-title text-3xl text-center mb-12">대회 단계별 촬영 전략 맵</h2>                        <div class="max-w-4xl mx-auto mb-12 bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-lg shadow">                <div class="flex">                    <div class="flex-shrink-0">                        <i data-lucide="star" class="h-6 w-6 text-amber-500"></i>                    </div>                    <div class="ml-4">                        <h3 class="font-bold text-lg text-amber-800">핵심 촬영 철학: 키 플레이어 중심 세계관</h3>                        <p class="mt-2 text-sm text-amber-700">                            본 촬영 전략의 가장 중요한 원칙은 <strong>'키 플레이어 중심의 세계관'</strong>을 구축하는 것입니다. 대회장의 모든 액션을 담는 것이 아니라, 우리가 선정한 소수의 키 플레이어에게 집중하여 시청자에게 그들의 서사를 깊이 각인시키는 것을 최우선 목표로 삼습니다.                        </p>                    </div>                </div>            </div>
+            <!-- Strategy Map Content -->            <div class="max-w-4xl mx-auto">
+                <div class="strategy-phase pl-12 md:pl-16">
+                    <div class="phase-marker"><i data-lucide="calendar-check" class="w-6 h-6 text-slate-500"></i></div>
+                    <div class="mb-8">
+                        <h2 class="text-3xl font-bold">국면 -1: 사전 준비</h2>
+                        <p class="text-slate-500 font-medium">10/11 ~ 10/15</p>
                     </div>
-                    <div class="ml-4">
-                        <h3 class="font-bold text-lg text-amber-800">핵심 촬영 철학: 키 플레이어 중심 세계관</h3>
-                        <p class="mt-2 text-sm text-amber-700">
-                            본 촬영 전략의 가장 중요한 원칙은 <strong>'키 플레이어 중심의 세계관'</strong>을 구축하는 것입니다. 대회장의 모든 액션을 담는 것이 아니라, 우리가 선정한 소수의 키 플레이어에게 집중하여 시청자에게 그들의 서사를 깊이 각인시키는 것을 최우선 목표로 삼습니다.
-                        </p>
+                    <div>
+                        <h4 class="text-xl font-bold mb-3"><i data-lucide="clipboard-check" class="inline w-5 h-5 mr-2 text-emerald-600"></i>핵심 목표: 방송 시스템 구축 및 최종 점검</h4>
+                        <div class="bg-white p-6 rounded-lg border space-y-6">
+                            <!-- 10/11 -->
+                            <div>
+                                <h5 class="font-bold text-lg mb-2 text-slate-700">10/11 (월)</h5>
+                                <div class="space-y-3 pl-2 border-l-2 border-slate-200 ml-2">
+                                    <div class="flex items-start">
+                                        <i data-lucide="plane-landing" class="w-5 h-5 mr-4 text-sky-600 flex-shrink-0 mt-1"></i>
+                                        <div>
+                                            <h6 class="font-semibold">선발대 도착 (16:05)</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i data-lucide="key-round" class="w-5 h-5 mr-4 text-sky-600 flex-shrink-0 mt-1"></i>
+                                        <div>
+                                            <h6 class="font-semibold">라이센스 키 교환</h6>
+                                            <p class="text-sm text-slate-600">외주(Pokercaster) 업체와 교환</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i data-lucide="settings-2" class="w-5 h-5 mr-4 text-sky-600 flex-shrink-0 mt-1"></i>
+                                        <div>
+                                            <h6 class="font-semibold">버추얼 테이블 셋업</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 10/12 -->
+                            <div>
+                                <h5 class="font-bold text-lg mb-2 text-slate-700">10/12 (화)</h5>
+                                <div class="space-y-3 pl-2 border-l-2 border-slate-200 ml-2">
+                                     <div class="flex items-start">
+                                        <i data-lucide="video" class="w-5 h-5 mr-4 text-orange-600 flex-shrink-0 mt-1"></i>
+                                        <div>
+                                            <h6 class="font-semibold">버추얼 테이블 1차 리허설</h6>
+                                            <p class="text-sm text-slate-600">1 카메라 & 편집 & GFX</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- 10/13 -->
+                            <div>
+                                <h5 class="font-bold text-lg mb-2 text-slate-700">10/13 (수)</h5>
+                                <div class="space-y-3 pl-2 border-l-2 border-slate-200 ml-2">
+                                    <div class="flex items-start">
+                                        <i data-lucide="plane-landing" class="w-5 h-5 mr-4 text-sky-600 flex-shrink-0 mt-1"></i>
+                                        <div>
+                                            <h6 class="font-semibold">후발대 도착 (08:25)</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i data-lucide="video" class="w-5 h-5 mr-4 text-orange-600 flex-shrink-0 mt-1"></i>
+                                        <div>
+                                            <h6 class="font-semibold">버추얼 테이블 2차 리허설</h6>
+                                            <p class="text-sm text-slate-600">2 카메라 & 편집 & GFX</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 10/14 -->
+                            <div>
+                                <h5 class="font-bold text-lg mb-2 text-slate-700">10/14 (목)</h5>
+                                <div class="space-y-3 pl-2 border-l-2 border-slate-200 ml-2">
+                                    <div class="flex items-start">
+                                        <i data-lucide="video" class="w-5 h-5 mr-4 text-orange-600 flex-shrink-0 mt-1"></i>
+                                        <div>
+                                            <h6 class="font-semibold">버추얼 테이블 3차 리허설</h6>
+                                            <p class="text-sm text-slate-600">2 카메라 & 편집 & GFX</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 10/15 -->
+                            <div>
+                                <h5 class="font-bold text-lg mb-2 text-slate-700">10/15 (금)</h5>
+                                <div class="space-y-3 pl-2 border-l-2 border-slate-200 ml-2">
+                                    <div class="flex items-start">
+                                        <i data-lucide="check-circle-2" class="w-5 h-5 mr-4 text-green-600 flex-shrink-0 mt-1"></i>
+                                        <div>
+                                            <h6 class="font-semibold">버추얼 테이블 최종 리허설</h6>
+                                            <p class="text-sm text-slate-600">2 카메라 & 편집 & GFX</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Strategy Map Content -->
-            <div class="max-w-4xl mx-auto">
                 <div class="strategy-phase pl-12 md:pl-16">
                     <div class="phase-marker"><i data-lucide="user-check" class="w-6 h-6 text-slate-500"></i></div>
                     <div class="mb-8">
@@ -79,392 +122,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="strategy-phase pl-12 md:pl-16"><div class="phase-marker"><i data-lucide="search" class="w-6 h-6 text-slate-500"></i></div><div class="mb-8"><h2 class="text-3xl font-bold">국면 1: 초반 탐색 구간</h2><p class="text-slate-500 font-medium">10/16 (Day 1A/1B), 10/17 (Day 1C)</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8"><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-red-600 mt-1">높음</p></div><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-orange-500 mt-1">낮음</p></div><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">키 플레이어 캐릭터 빌딩</p></div></div><div class="grid grid-cols-1 lg:grid-cols-2 gap-6"><div><h4 class="text-xl font-bold mb-3"><i data-lucide="bar-chart-2" class="inline w-5 h-5 mr-2 text-emerald-600"></i>상황 분석 (Day 1 흐름)</h4>
-                    <div class="bg-white p-4 rounded-md border text-slate-600">
-                        <div class="flex flex-col md:flex-row rounded-lg overflow-hidden border">
-                            <!-- 1-1: Early Phase -->
-                            <div class="w-full md:w-1/2 p-4 bg-blue-50">
-                                <h5 class="font-bold text-lg text-blue-800 text-center mb-3">1-1: 초반 레벨</h5>
-                                <div class="space-y-4 text-sm">
-                                    <div class="flex items-center">
-                                        <i data-lucide="layers" class="w-8 h-8 text-blue-500 mr-3"></i>
-                                        <div><span class="font-semibold">스택:</span> 딥스택</div>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <i data-lucide="glasses" class="w-8 h-8 text-blue-500 mr-3"></i>
-                                        <div><span class="font-semibold">플레이:</span> 단조로운 탐색전</div>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <i data-lucide="thumbs-down" class="w-8 h-8 text-blue-500 mr-3"></i>
-                                        <div><span class="font-semibold">콘텐츠 가치:</span> 낮음</div>
-                                    </div>
-                                </div>
-                                <p class="text-xs text-blue-700 mt-4 text-center bg-blue-100 p-2 rounded">촬영량은 많지만, 대부분 폐기될 가능성이 높음</p>
-                            </div>
-                            <!-- 1-2: Late Phase -->
-                            <div class="w-full md:w-1/2 p-4 bg-red-50 border-t-2 md:border-t-0 md:border-l-2 border-dashed">
-                                <h5 class="font-bold text-lg text-red-800 text-center mb-3">1-2: 마지막 레벨</h5>
-                                <div class="space-y-4 text-sm">
-                                    <div class="flex items-center">
-                                        <i data-lucide="layer-2" class="w-8 h-8 text-red-500 mr-3"></i>
-                                        <div><span class="font-semibold">스택:</span> 숏스택 (~20BB)</div>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <i data-lucide="zap" class="w-8 h-8 text-red-500 mr-3"></i>
-                                        <div><span class="font-semibold">플레이:</span> 올인/셔브 생존 경쟁</div>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <i data-lucide="thumbs-up" class="w-8 h-8 text-red-500 mr-3"></i>
-                                        <div><span class="font-semibold">콘텐츠 가치:</span> 높음</div>
-                                    </div>
-                                </div>
-                                 <p class="text-xs text-red-700 mt-4 text-center bg-red-100 p-2 rounded">모든 올인(All-in) 순간이 결정적인 콘텐츠가 됨</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><div><h4 class="text-xl font-bold mb-3"><i data-lucide="list-checks" class="inline w-5 h-5 mr-2 text-emerald-600"></i>액션 플랜 (국면 1 공통)</h4>
-                    <div class="bg-white p-4 rounded-md border text-slate-600">
-                        <div class="mb-4">
-                            <h5 class="font-bold text-center mb-3">키 플레이어 선정 및 운영 다이어그램</h5>
-                            <div class="p-3 bg-slate-50 rounded-lg border">
-                                <div class="flex items-center justify-between text-center text-sm">
-                                    <div class="w-1/4">
-                                        <div class="p-2 border rounded-md bg-white">
-                                            <p class="font-bold">VT 후보군</p>
-                                            <p class="text-xs">(10명 내외)</p>
-                                        </div>
-                                    </div>
-                                    <div class="text-slate-400 font-bold text-2xl mx-2">→</div>
-                                    <div class="w-2/4">
-                                        <div class="p-2 border border-emerald-500 rounded-md bg-emerald-50 text-emerald-800">
-                                            <p class="font-bold">버추얼 테이블</p>
-                                            <p class="text-xs font-semibold">(3명 송출)</p>
-                                        </div>
-                                    </div>
-                                    <div class="text-slate-400 font-bold text-2xl mx-2">+</div>
-                                    <div class="w-1/4">
-                                        <div class="p-2 border border-sky-500 rounded-md bg-sky-50 text-sky-800">
-                                            <p class="font-bold">피처 테이블</p>
-                                            <p class="text-xs font-semibold">(2명)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center justify-center mt-3">
-                                    <div class="text-slate-400 font-bold text-2xl mr-3">=</div>
-                                    <div class="p-2 border-2 border-indigo-500 rounded-md bg-indigo-50 text-indigo-800 text-center">
-                                        <p class="font-bold text-sm">최종 방송 인원 (5명)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-6 border-t pt-4">
-                            <h5 class="font-bold text-center mb-4">운영 워크플로우: 기본 운영과 예외 처리</h5>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <!-- Column 1: Normal Operation -->
-                                <div class="p-4 bg-sky-50 rounded-lg border border-sky-200 h-full">
-                                    <h6 class="font-bold text-center text-sky-800">기본 운영 (평상시)</h6>
-                                    <p class="text-xs text-center text-sky-600 mb-3">안정적인 서사 구축</p>
-                                    <div class="flex flex-col items-center space-y-2">
-                                        <div class="p-2 border rounded-md bg-white w-full text-center shadow-sm">
-                                            <p class="font-semibold text-sm">VT 후보군 (상위 3명)</p>
-                                        </div>
-                                        <i data-lucide="arrow-down" class="w-5 h-5 text-sky-400"></i>
-                                        <div class="p-2 border rounded-md bg-white w-full text-center shadow-sm">
-                                            <p class="text-sm">#1 플레이어 촬영</p>
-                                        </div>
-                                        <i data-lucide="arrow-down" class="w-5 h-5 text-sky-400"></i>
-                                        <div class="p-2 border rounded-md bg-white w-full text-center shadow-sm">
-                                            <p class="text-sm">#2 플레이어 촬영</p>
-                                        </div>
-                                        <i data-lucide="arrow-down" class="w-5 h-5 text-sky-400"></i>
-                                        <div class="p-2 border rounded-md bg-white w-full text-center shadow-sm">
-                                            <p class="text-sm">#3 플레이어 촬영</p>
-                                        </div>
-                                        <i data-lucide="refresh-cw" class="w-5 h-5 text-sky-400 pt-1"></i>
-                                        <p class="text-xs text-sky-600">(순환 반복)</p>
-                                    </div>
-                                </div>
-                                <!-- Column 2: Exception Handling -->
-                                <div class="p-4 bg-red-50 rounded-lg border border-red-200 h-full">
-                                    <h6 class="font-bold text-center text-red-800">🔥 예외 처리 (빅 핸드)</h6>
-                                    <p class="text-xs text-center text-red-600 mb-3">결정적 순간 포착</p>
-                                    <div class="flex flex-col items-center justify-center h-full space-y-3">
-                                        <div class="p-2 border rounded-md bg-white w-full text-center shadow-sm">
-                                            <p class="font-semibold text-sm">VT 후보군 (순위 무관)</p>
-                                        </div>
-                                        <div class="text-center my-2">
-                                            <p class="text-lg font-bold text-red-600">🔥 빅 핸드 발생!</p>
-                                        </div>
-                                        <i data-lucide="chevrons-down" class="w-8 h-8 text-red-500 animate-bounce"></i>
-                                        <div class="p-3 border-2 border-red-400 rounded-md bg-red-200 w-full text-center shadow">
-                                            <p class="font-bold text-red-800">즉시 방송 송출</p>
-                                            <p class="text-xs text-red-700">(최우선 처리)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-xs text-center text-slate-500 mt-3">
-                                <strong>설명:</strong> 평소에는 <strong>기본 운영</strong>에 따라 상위 3명을 순회하며 안정성을 확보하고, 빅 핸드 발생 시에는 즉시 <strong>예외 처리</strong> 프로토콜로 전환하여 결정적인 순간을 놓치지 않습니다.
-                            </p>
-                        </div>
-                    </div>
-                </div></div></div>
-                <div class="strategy-phase pl-12 md:pl-16"><div class="phase-marker"><i data-lucide="git-commit" class="w-6 h-6 text-slate-500"></i></div><div class="mb-8"><h2 class="text-3xl font-bold">국면 2: 스택 양극화</h2><p class="text-slate-500 font-medium">10/18 (Day 2)</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8"><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-red-600 mt-1">높음</p></div><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-yellow-500 mt-1">중간</p></div><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">스택 기반 전략적 촬영</p></div></div><div><h4 class="text-xl font-bold mb-3"><i data-lucide="bar-chart-2" class="inline w-5 h-5 mr-2 text-emerald-600"></i>상황 분석 (Day 2 흐름)</h4>
-                    <div class="bg-white p-4 rounded-md border text-slate-600">
-                        <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-2 text-center">
-                            <!-- Early Phase -->
-                            <div class="flex-1 p-3 bg-slate-50 rounded-lg w-full border">
-                                <h6 class="font-bold text-sm">초반</h6>
-                                <i data-lucide="users" class="w-8 h-8 mx-auto my-2 text-slate-500"></i>
-                                <p class="text-xs">필드 압축 / 탐색전</p>
-                            </div>
-                            <i data-lucide="arrow-right" class="w-6 h-6 text-slate-400 hidden md:block"></i>
-                             <i data-lucide="arrow-down" class="w-6 h-6 text-slate-400 md:hidden"></i>
-                            <!-- Mid Phase -->
-                            <div class="flex-1 p-3 bg-yellow-50 rounded-lg w-full border">
-                                <h6 class="font-bold text-sm">중반</h6>
-                                <i data-lucide="zap" class="w-8 h-8 mx-auto my-2 text-yellow-500"></i>
-                                <p class="text-xs">숏스택 올인 / 칩리더 탄생</p>
-                            </div>
-                            <i data-lucide="arrow-right" class="w-6 h-6 text-slate-400 hidden md:block"></i>
-                             <i data-lucide="arrow-down" class="w-6 h-6 text-slate-400 md:hidden"></i>
-                            <!-- Late Phase -->
-                            <div class="flex-1 p-3 bg-red-50 rounded-lg w-full border">
-                                <h6 class="font-bold text-sm">후반</h6>
-                                <i data-lucide="shield-alert" class="w-8 h-8 mx-auto my-2 text-red-500"></i>
-                                <p class="text-xs">버블 접근 / 긴장감 고조</p>
-                            </div>
-                        </div>
-                        <div class="mt-4 pt-4 border-t text-sm">
-                            <p>Day 1 생존 키 플레이어들이 합쳐지면서 필드가 압축되고, 키 플레이어들 사이에서도 딥스택과 숏스택의 구분이 명확해집니다. 본격적인 올인 싸움이 시작되는 시점입니다.</p>
-                            <p class="mt-2"><strong>하루의 흐름:</strong> 초반에는 탐색전이 이어지지만, <strong>중반부터는 숏스택 키 플레이어들의 생존을 건 올인이 빈번해지고, 이를 흡수하며 새로운 칩리더 키 플레이어가 탄생하는 등 국면이 급변</strong>합니다. 후반에는 버블이 다가오며 긴장감이 고조됩니다.</p>
-                        </div>
-                    </div>
-                </div><div class="mt-6"><h4 class="text-xl font-bold mb-3"><i data-lucide="list-checks" class="inline w-5 h-5 mr-2 text-emerald-600"></i>스택별 액션 플랜</h4>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        <!-- Deepstack Card -->
-                        <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
-                            <h5 class="font-bold text-lg mb-3 flex items-center text-blue-800"><i data-lucide="battery-full" class="w-6 h-6 mr-2"></i>딥스택 키 플레이어</h5>
-                            <div class="space-y-4">
-                                <div class="flex items-start">
-                                    <i data-lucide="history" class="w-5 h-5 mr-3 mt-1 text-blue-600 flex-shrink-0"></i>
-                                    <div>
-                                        <h6 class="font-semibold">히스토리 확인</h6>
-                                        <p class="text-sm text-slate-600">어떻게 딥스택이 되었는지 파악 (꾸준한 빌드업 vs 한 방 빅팟)</p>
-                                    </div>
-                                </div>
-                                <div class="flex items-start">
-                                    <i data-lucide="camera" class="w-5 h-5 mr-3 mt-1 text-blue-600 flex-shrink-0"></i>
-                                    <div>
-                                        <h6 class="font-semibold">촬영 빈도 조절</h6>
-                                        <p class="text-sm text-slate-600">히스토리에 따라 촬영 빈도를 유동적으로 조절하여 효율 증대</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Shortstack Card -->
-                        <div class="bg-red-50 p-4 rounded-lg border border-red-200">
-                            <h5 class="font-bold text-lg mb-3 flex items-center text-red-800"><i data-lucide="battery-warning" class="w-6 h-6 mr-2"></i>숏스택 키 플레이어</h5>
-                             <div class="space-y-4">
-                                <div class="flex items-start">
-                                    <i data-lucide="eye" class="w-5 h-5 mr-3 mt-1 text-red-600 flex-shrink-0"></i>
-                                    <div>
-                                        <h6 class="font-semibold">지속 모니터링</h6>
-                                        <p class="text-sm text-slate-600">올인 순간을 놓치지 않도록 항상 주시</p>
-                                    </div>
-                                </div>
-                                <div class="flex items-start">
-                                    <i data-lucide="star" class="w-5 h-5 mr-3 mt-1 text-red-600 flex-shrink-0"></i>
-                                    <div>
-                                        <h6 class="font-semibold">촬영 우선순위 최상</h6>
-                                        <p class="text-sm text-slate-600">모든 올인 핸드는 반드시 촬영</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div></div>
-                <div class="strategy-phase pl-12 md:pl-16">
-                    <div class="phase-marker"><i data-lucide="shield" class="w-6 h-6 text-slate-500"></i></div>
-                    <div class="mb-8"><h2 class="text-3xl font-bold">국면 3: 버블 플레이 & 필드 압축</h2><p class="text-slate-500 font-medium">10/19 (Day 3)</p></div>
-                     <div class="mb-4 bg-indigo-50 border-l-4 border-indigo-400 p-4 rounded-r-lg">
-                        <div class="flex">
-                            <div class="flex-shrink-0"><i data-lucide="info" class="h-5 w-5 text-indigo-500"></i></div>
-                            <div class="ml-3"><p class="text-sm text-indigo-700"><strong>Day 3 요약:</strong> 하루 동안 <strong>버블 플레이 → 1차 탈락 웨이브 → 중반부 필드 안정기</strong>로 국면이 빠르게 전환되는 가장 역동적인 날입니다. 상황 변화에 민첩하게 대응해야 합니다.</p></div>
-                        </div>
-                    </div>
-                    <div class="space-y-6">
-                        <!-- Bubble Sub-phase 1: Before Bubble -->
-                        <div class="bg-white p-6 rounded-lg border">
-                            <h4 class="font-bold text-xl mb-3">3A: 버블 직전 (Day 3 초반)</h4>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-green-600 mt-1">낮음</p></div>
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-orange-500 mt-1">매우 낮음</p></div>
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">팀 재정비</p></div>
-                            </div>
-                            <p class="text-slate-600 mb-4">키 플레이어들을 포함한 대부분의 선수들이 극도로 소극적이 되어, 팀이 재정비할 수 있는 가장 여유로운 시간입니다. 액션 플랜은 장비 점검, 데이터 백업 등입니다.</p>
-                        </div>
-                        <!-- Bubble Sub-phase 2: The Bubble -->
-                        <div class="bg-white p-6 rounded-lg border">
-                            <h4 class="font-bold text-xl mb-3">3B: 버블 (Day 3 중반)</h4>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-red-600 mt-1">최상</p></div>
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-green-600 mt-1">최상</p></div>
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">모든 올인 촬영</p></div>
-                            </div>
-                            <p class="text-slate-600 mb-4">토너먼트의 클라이맥스. 이 순간은 어떤 선수가 탈락하든 그 자체가 중요한 스토리이므로, 키 플레이어 여부와 관계없이 모든 올인 상황을 촬영합니다.</p>
-                            <div class="mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-md">
-                               <div class="flex">
-                                   <div class="flex-shrink-0">
-                                       <i data-lucide="alert-triangle" class="h-5 w-5 text-yellow-500"></i>
-                                   </div>
-                                   <div class="ml-3">
-                                       <p class="font-bold text-yellow-800">경고: 버추얼 테이블 처리 불가</p>
-                                       <div class="mt-2 text-sm text-yellow-700">
-                                           <p>버블 상황의 동시성과 속도로 인해, 현재의 버추얼 테이블 시스템으로는 실시간 방송 대응이 불가능합니다.</p>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                        </div>
-                        <!-- Bubble Sub-phase 3: After Bubble -->
-                        <div class="bg-white p-6 rounded-lg border">
-                            <h4 class="font-bold text-xl mb-3">3C: 버블 직후 ~ 필드 압축 (Day 3 후반)</h4>
-                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-yellow-600 mt-1">중간</p></div>
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-yellow-500 mt-1">중간</p></div>
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">키 플레이어 스토리 심화</p></div>
-                            </div>
-                            <p class="text-slate-600 mb-4">1차 탈락 웨이브가 끝나고 필드가 안정되는 시점. 키 플레이어들은 파이널 테이블을 목표로 본격적인 스택 빌딩을 시작하며, 이 구간에서 어떤 키 플레이어가 칩을 모으는지가 후반부의 중요 스토리 라인이 됩니다.</p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="strategy-phase pl-12 md:pl-16">
-                    <div class="phase-marker"><i data-lucide="trophy" class="w-6 h-6 text-slate-500"></i></div>
-                    <div class="mb-8"><h2 class="text-3xl font-bold">국면 4: 파이널을 향한 경쟁</h2><p class="text-slate-500 font-medium">10/20 (Day 4)</p></div>
-                     <div class="mb-4 bg-indigo-50 border-l-4 border-indigo-400 p-4 rounded-r-lg">
-                        <div class="flex">
-                            <div class="flex-shrink-0"><i data-lucide="info" class="h-5 w-5 text-indigo-500"></i></div>
-                            <div class="ml-3"><p class="text-sm text-indigo-700"><strong>Day 4 요약:</strong> 초반에는 새로운 키 플레이어 후보가 등장하며 필드가 재편되고, 후반으로 갈수록 파이널 테이블 진출을 위한 키 플레이어들의 치열한 경쟁이 펼쳐집니다.</p></div>
-                        </div>
-                    </div>
-                    <div class="space-y-6">
-                        <!-- Phase 4A -->
-                        <div class="bg-white p-6 rounded-lg border">
-                            <h4 class="font-bold text-xl mb-3">4A: 신규 키 플레이어 등장 (Day 4 초중반)</h4>
-                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-yellow-600 mt-1">중간</p></div>
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-yellow-500 mt-1">중간</p></div>
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">확장된 키 플레이어 추적</p></div>
-                            </div>
-                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                                <div>
-                                    <h5 class="font-bold text-lg mb-2 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2 text-emerald-600"></i>상황 분석</h5>
-                                    <div class="p-4 rounded-lg border bg-slate-50">
-                                        <div class="flex items-center justify-around">
-                                            <div class="text-center">
-                                                <i data-lucide="users" class="w-10 h-10 mx-auto text-slate-500"></i>
-                                                <p class="mt-2 font-semibold text-sm">기존 키 플레이어</p>
-                                            </div>
-                                            <i data-lucide="plus" class="w-8 h-8 text-slate-400"></i>
-                                            <div class="text-center">
-                                                <i data-lucide="user-plus" class="w-10 h-10 mx-auto text-amber-500"></i>
-                                                <p class="mt-2 font-semibold text-sm">신규 키 플레이어</p>
-                                                <p class="text-xs text-slate-500">(칩 리더 등)</p>
-                                            </div>
-                                        </div>
-                                        <p class="text-xs text-center text-slate-600 mt-4">
-                                            기존 키 플레이어 외에 새로운 후보들이 이야기의 중심으로 떠오르는 시기입니다.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-lg mb-2 flex items-center"><i data-lucide="list-checks" class="w-5 h-5 mr-2 text-emerald-600"></i>액션 플랜</h5>
-                                     <div class="p-4 rounded-lg border bg-slate-50 space-y-4">
-                                        <div class="flex items-start">
-                                            <i data-lucide="list-plus" class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0"></i>
-                                            <div>
-                                                <h6 class="font-semibold">후보군 확장 및 공유</h6>
-                                                <p class="text-sm text-slate-600">새로운 키 플레이어 후보를 리스트업하고 팀에 공유합니다.</p>
-                                            </div>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <i data-lucide="scale" class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0"></i>
-                                            <div>
-                                                <h6 class="font-semibold">균형 있는 촬영</h6>
-                                                <p class="text-sm text-slate-600">기존과 신규 키 플레이어의 서사를 균형있게 구축합니다.</p>
-                                            </div>
-                                        </div>
-                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Phase 4B -->
-                        <div class="bg-white p-6 rounded-lg border">
-                            <h4 class="font-bold text-xl mb-3">4B: 파이널 테이블 진출 경쟁 (Day 4 후반)</h4>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-red-600 mt-1">높음</p></div>
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-green-600 mt-1">높음</p></div>
-                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">모든 탈락자 촬영</p></div>
-                            </div>
-                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                                <div>
-                                    <h5 class="font-bold text-lg mb-2 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2 text-emerald-600"></i>상황 분석</h5>
-                                    <div class="p-4 rounded-lg border bg-slate-50 text-center">
-                                        <i data-lucide="flag" class="w-12 h-12 mx-auto text-indigo-500"></i>
-                                        <p class="font-bold text-lg mt-2">파이널 테이블이 눈앞</p>
-                                        <div class="flex justify-center items-center space-x-4 my-4">
-                                            <div class="text-center">
-                                                <i data-lucide="dollar-sign" class="w-8 h-8 mx-auto text-red-500 animate-pulse"></i>
-                                                <p class="text-sm mt-1">페이 점프 압박</p>
-                                            </div>
-                                            <i data-lucide="arrow-right" class="w-6 h-6 text-slate-400"></i>
-                                            <div class="text-center">
-                                                <i data-lucide="user-x" class="w-8 h-8 mx-auto text-red-500"></i>
-                                                <p class="text-sm mt-1">모든 탈락이 중요</p>
-                                            </div>
-                                        </div>
-                                        <p class="text-sm text-slate-600 mt-4">
-                                            모든 탈락이 키 플레이어 서사에 중요한 변수가 되는, 압박감이 극대화되는 구간입니다.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-lg mb-2 flex items-center"><i data-lucide="list-checks" class="w-5 h-5 mr-2 text-emerald-600"></i>액션 플랜: 전략 전환</h5>
-                                    <div class="p-4 rounded-lg border bg-slate-50">
-                                        <h6 class="font-semibold text-center mb-3">촬영 목표 변경: '선별'에서 '전체'로</h6>
-                                        <div class="flex items-center justify-around">
-                                            <div class="text-center p-2 border-2 border-dashed rounded-lg">
-                                                <p class="font-bold text-sm text-slate-600">이전</p>
-                                                <i data-lucide="users" class="w-10 h-10 mx-auto my-2 text-slate-500"></i>
-                                                <p class="text-xs">선별된 키 플레이어</p>
-                                            </div>
-                                            <i data-lucide="arrow-right-circle" class="w-8 h-8 text-emerald-500 flex-shrink-0 mx-2"></i>
-                                            <div class="text-center p-2 bg-emerald-100 border-2 border-emerald-400 rounded-lg">
-                                                <p class="font-bold text-sm text-emerald-800">전환 후</p>
-                                                <i data-lucide="user-x" class="w-10 h-10 mx-auto my-2 text-emerald-700"></i>
-                                                <p class="text-xs font-semibold">모든 탈락 상황</p>
-                                            </div>
-                                        </div>
-                                        <div class="mt-4 pt-4 border-t">
-                                            <p class="text-sm text-slate-600">키 플레이어의 생존 여부와 최종 FT 구도를 확정하기 위해, <strong>'모든 탈락 상황'</strong>을 촬영하는 것으로 목표를 변경합니다.</p>
-                                            <ul class="list-disc list-inside space-y-1 text-sm text-slate-600 mt-2 pl-2">
-                                                <li>탈락 핸드, 상대, 보드 상황을 명확히 기록하여 키 플레이어의 최종 서사를 완성합니다.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <script>
-        lucide.createIcons();
-    </script>
-</body>
-</html>
+                <div class="strategy-phase pl-12 md:pl-16"><div class="phase-marker"><i data-lucide="search" class="w-6 h-6 text-slate-500"></i></div><div class="mb-8"><h2 class="text-3xl font-bold">국면 1: 초반 탐색 구간</h2><p class="text-slate-500 font-medium">10/16 (Day 1A/1B), 10/17 (Day 1C)</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8"><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-red-600 mt-1">높음</p></div><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-orange-500 mt-1">낮음</p></div><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">키 플레이어 캐릭터 빌딩</p></div></div><div class="grid grid-cols-1 lg:grid-cols-2 gap-6"><div><h4 class="text-xl font-bold mb-3"><i data-lucide="bar-chart-2" class="inline w-5 h-5 mr-2 text-emerald-600"></i>상황 분석 (Day 1 흐름)</h4>                    <div class="bg-white p-4 rounded-md border text-slate-600">                        <div class="flex flex-col md:flex-row rounded-lg overflow-hidden border">                            <!-- 1-1: Early Phase -->                            <div class="w-full md:w-1/2 p-4 bg-blue-50">                                <h5 class="font-bold text-lg text-blue-800 text-center mb-3">1-1: 초반 레벨</h5>                                <div class="space-y-4 text-sm">                                    <div class="flex items-center">                                        <i data-lucide="layers" class="w-8 h-8 text-blue-500 mr-3"></i>                                        <div><span class="font-semibold">스택:</span> 딥스택</div>                                    </div>                                    <div class="flex items-center">                                        <i data-lucide="glasses" class="w-8 h-8 text-blue-500 mr-3"></i>                                        <div><span class="font-semibold">플레이:</span> 단조로운 탐색전</div>                                    </div>                                    <div class="flex items-center">                                        <i data-lucide="thumbs-down" class="w-8 h-8 text-blue-500 mr-3"></i>                                        <div><span class="font-semibold">콘텐츠 가치:</span> 낮음</div>                                    </div>                                </div>                                <p class="text-xs text-blue-700 mt-4 text-center bg-blue-100 p-2 rounded">촬영량은 많지만, 대부분 폐기될 가능성이 높음</p>                            </div>                            <!-- 1-2: Late Phase -->                            <div class="w-full md:w-1/2 p-4 bg-red-50 border-t-2 md:border-t-0 md:border-l-2 border-dashed">                                <h5 class="font-bold text-lg text-red-800 text-center mb-3">1-2: 마지막 레벨</h5>                                <div class="space-y-4 text-sm">                                    <div class="flex items-center">                                        <i data-lucide="layer-2" class="w-8 h-8 text-red-500 mr-3"></i>                                        <div><span class="font-semibold">스택:</span> 숏스택 (~20BB)</div>                                    </div>                                    <div class="flex items-center">                                        <i data-lucide="zap" class="w-8 h-8 text-red-500 mr-3"></i>                                        <div><span class="font-semibold">플레이:</span> 올인/셔브 생존 경쟁</div>                                    </div>                                    <div class="flex items-center">                                        <i data-lucide="thumbs-up" class="w-8 h-8 text-red-500 mr-3"></i>                                        <div><span class="font-semibold">콘텐츠 가치:</span> 높음</div>                                    </div>                                </div>                                 <p class="text-xs text-red-700 mt-4 text-center bg-red-100 p-2 rounded">모든 올인(All-in) 순간이 결정적인 콘텐츠가 됨</p>                            </div>                        </div>                    </div>                </div><div><h4 class="text-xl font-bold mb-3"><i data-lucide="list-checks" class="inline w-5 h-5 mr-2 text-emerald-600"></i>액션 플랜 (국면 1 공통)</h4>                    <div class="bg-white p-4 rounded-md border text-slate-600">                        <div class="mb-4">                            <h5 class="font-bold text-center mb-3">키 플레이어 선정 및 운영 다이어그램</h5>                            <div class="p-3 bg-slate-50 rounded-lg border">                                <div class="flex items-center justify-between text-center text-sm">                                    <div class="w-1/4">                                        <div class="p-2 border rounded-md bg-white">                                            <p class="font-bold">VT 후보군</p>                                            <p class="text-xs">(10명 내외)</p>                                        </div>                                    </div>                                    <div class="text-slate-400 font-bold text-2xl mx-2">→</div>                                    <div class="w-2/4">                                        <div class="p-2 border border-emerald-500 rounded-md bg-emerald-50 text-emerald-800">                                            <p class="font-bold">버추얼 테이블</p>                                            <p class="text-xs font-semibold">(3명 송출)</p>                                        </div>                                    </div>                                    <div class="text-slate-400 font-bold text-2xl mx-2">+</div>                                    <div class="w-1/4">                                        <div class="p-2 border border-sky-500 rounded-md bg-sky-50 text-sky-800">                                            <p class="font-bold">피처 테이블</p>                                            <p class="text-xs font-semibold">(2명)</p>                                        </div>                                    </div>                                </div>                                <div class="flex items-center justify-center mt-3">                                    <div class="text-slate-400 font-bold text-2xl mr-3">=</div>                                    <div class="p-2 border-2 border-indigo-500 rounded-md bg-indigo-50 text-indigo-800 text-center">                                        <p class="font-bold text-sm">최종 방송 인원 (5명)</p>                                    </div>                                </div>                            </div>                        </div>                        <div class="mt-6 border-t pt-4">                            <h5 class="font-bold text-center mb-4">운영 워크플로우: 기본 운영과 예외 처리</h5>                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">                                <!-- Column 1: Normal Operation -->                                <div class="p-4 bg-sky-50 rounded-lg border border-sky-200 h-full">                                    <h6 class="font-bold text-center text-sky-800">기본 운영 (평상시)</h6>                                    <p class="text-xs text-center text-sky-600 mb-3">안정적인 서사 구축</p>                                    <div class="flex flex-col items-center space-y-2">                                        <div class="p-2 border rounded-md bg-white w-full text-center shadow-sm">                                            <p class="font-semibold text-sm">VT 후보군 (상위 3명)</p>                                        </div>                                        <i data-lucide="arrow-down" class="w-5 h-5 text-sky-400"></i>                                        <div class="p-2 border rounded-md bg-white w-full text-center shadow-sm">                                            <p class="text-sm">#1 플레이어 촬영</p>                                        </div>                                        <i data-lucide="arrow-down" class="w-5 h-5 text-sky-400"></i>                                        <div class="p-2 border rounded-md bg-white w-full text-center shadow-sm">                                            <p class="text-sm">#2 플레이어 촬영</p>                                        </div>                                        <i data-lucide="arrow-down" class="w-5 h-5 text-sky-400"></i>                                        <div class="p-2 border rounded-md bg-white w-full text-center shadow-sm">                                            <p class="text-sm">#3 플레이어 촬영</p>                                        </div>                                        <i data-lucide="refresh-cw" class="w-5 h-5 text-sky-400 pt-1"></i>                                        <p class="text-xs text-sky-600">(순환 반복)</p>                                    </div>                                </div>                                <!-- Column 2: Exception Handling -->                                <div class="p-4 bg-red-50 rounded-lg border border-red-200 h-full">                                    <h6 class="font-bold text-center text-red-800">🔥 예외 처리 (빅 핸드)</h6>                                    <p class="text-xs text-center text-red-600 mb-3">결정적 순간 포착</p>                                    <div class="flex flex-col items-center justify-center h-full space-y-3">                                        <div class="p-2 border rounded-md bg-white w-full text-center shadow-sm">                                            <p class="font-semibold text-sm">VT 후보군 (순위 무관)</p>                                        </div>                                        <div class="text-center my-2">                                            <p class="text-lg font-bold text-red-600">🔥 빅 핸드 발생!</p>                                        </div>                                        <i data-lucide="chevrons-down" class="w-8 h-8 text-red-500 animate-bounce"></i>                                        <div class="p-3 border-2 border-red-400 rounded-md bg-red-200 w-full text-center shadow">                                            <p class="font-bold text-red-800">즉시 방송 송출</p>                                            <p class="text-xs text-red-700">(최우선 처리)</p>                                        </div>                                    </div>                                </div>                            </div>                            <p class="text-xs text-center text-slate-500 mt-3">                                <strong>설명:</strong> 평소에는 <strong>기본 운영</strong>에 따라 상위 3명을 순회하며 안정성을 확보하고, 빅 핸드 발생 시에는 즉시 <strong>예외 처리</strong> 프로토콜로 전환하여 결정적인 순간을 놓치지 않습니다.                            </p>                        </div>                    </div>                </div></div></div>                <div class="strategy-phase pl-12 md:pl-16"><div class="phase-marker"><i data-lucide="git-commit" class="w-6 h-6 text-slate-500"></i></div><div class="mb-8"><h2 class="text-3xl font-bold">국면 2: 스택 양극화</h2><p class="text-slate-500 font-medium">10/18 (Day 2)</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8"><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-red-600 mt-1">높음</p></div><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-yellow-500 mt-1">중간</p></div><div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">스택 기반 전략적 촬영</p></div></div><div><h4 class="text-xl font-bold mb-3"><i data-lucide="bar-chart-2" class="inline w-5 h-5 mr-2 text-emerald-600"></i>상황 분석 (Day 2 흐름)</h4>                    <div class="bg-white p-4 rounded-md border text-slate-600">                        <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-2 text-center">                            <!-- Early Phase -->                            <div class="flex-1 p-3 bg-slate-50 rounded-lg w-full border">                                <h6 class="font-bold text-sm">초반</h6>                                <i data-lucide="users" class="w-8 h-8 mx-auto my-2 text-slate-500"></i>                                <p class="text-xs">필드 압축 / 탐색전</p>                            </div>                            <i data-lucide="arrow-right" class="w-6 h-6 text-slate-400 hidden md:block"></i>                             <i data-lucide="arrow-down" class="w-6 h-6 text-slate-400 md:hidden"></i>                            <!-- Mid Phase -->                            <div class="flex-1 p-3 bg-yellow-50 rounded-lg w-full border">                                <h6 class="font-bold text-sm">중반</h6>                                <i data-lucide="zap" class="w-8 h-8 mx-auto my-2 text-yellow-500"></i>                                <p class="text-xs">숏스택 올인 / 칩리더 탄생</p>                            </div>                            <i data-lucide="arrow-right" class="w-6 h-6 text-slate-400 hidden md:block"></i>                             <i data-lucide="arrow-down" class="w-6 h-6 text-slate-400 md:hidden"></i>                            <!-- Late Phase -->                            <div class="flex-1 p-3 bg-red-50 rounded-lg w-full border">                                <h6 class="font-bold text-sm">후반</h6>                                <i data-lucide="shield-alert" class="w-8 h-8 mx-auto my-2 text-red-500"></i>                                <p class="text-xs">버블 접근 / 긴장감 고조</p>                            </div>                        </div>                        <div class="mt-4 pt-4 border-t text-sm">                            <p>Day 1 생존 키 플레이어들이 합쳐지면서 필드가 압축되고, 키 플레이어들 사이에서도 딥스택과 숏스택의 구분이 명확해집니다. 본격적인 올인 싸움이 시작되는 시점입니다.</p>                            <p class="mt-2"><strong>하루의 흐름:</strong> 초반에는 탐색전이 이어지지만, <strong>중반부터는 숏스택 키 플레이어들의 생존을 건 올인이 빈번해지고, 이를 흡수하며 새로운 칩리더 키 플레이어가 탄생하는 등 국면이 급변</strong>합니다. 후반에는 버블이 다가오며 긴장감이 고조됩니다.</p>                        </div>                    </div>                </div><div class="mt-6"><h4 class="text-xl font-bold mb-3"><i data-lucide="list-checks" class="inline w-5 h-5 mr-2 text-emerald-600"></i>스택별 액션 플랜</h4>                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">                        <!-- Deepstack Card -->                        <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">                            <h5 class="font-bold text-lg mb-3 flex items-center text-blue-800"><i data-lucide="battery-full" class="w-6 h-6 mr-2"></i>딥스택 키 플레이어</h5>                            <div class="space-y-4">                                <div class="flex items-start">                                    <i data-lucide="history" class="w-5 h-5 mr-3 mt-1 text-blue-600 flex-shrink-0"></i>                                    <div>                                        <h6 class="font-semibold">히스토리 확인</h6>                                        <p class="text-sm text-slate-600">어떻게 딥스택이 되었는지 파악 (꾸준한 빌드업 vs 한 방 빅팟)</p>                                    </div>                                </div>                                <div class="flex items-start">                                    <i data-lucide="camera" class="w-5 h-5 mr-3 mt-1 text-blue-600 flex-shrink-0"></i>                                    <div>                                        <h6 class="font-semibold">촬영 빈도 조절</h6>                                        <p class="text-sm text-slate-600">히스토리에 따라 촬영 빈도를 유동적으로 조절하여 효율 증대</p>                                    </div>                                </div>                            </div>                        </div>                        <!-- Shortstack Card -->                        <div class="bg-red-50 p-4 rounded-lg border border-red-200">                            <h5 class="font-bold text-lg mb-3 flex items-center text-red-800"><i data-lucide="battery-warning" class="w-6 h-6 mr-2"></i>숏스택 키 플레이어</h5>                             <div class="space-y-4">                                <div class="flex items-start">                                    <i data-lucide="eye" class="w-5 h-5 mr-3 mt-1 text-red-600 flex-shrink-0"></i>                                    <div>                                        <h6 class="font-semibold">지속 모니터링</h6>                                        <p class="text-sm text-slate-600">올인 순간을 놓치지 않도록 항상 주시</p>                                    </div>                                </div>                                <div class="flex items-start">                                    <i data-lucide="star" class="w-5 h-5 mr-3 mt-1 text-red-600 flex-shrink-0"></i>                                    <div>                                        <h6 class="font-semibold">촬영 우선순위 최상</h6>                                        <p class="text-sm text-slate-600">모든 올인 핸드는 반드시 촬영</p>                                    </div>                                </div>                            </div>                        </div>                    </div>                </div></div>                <div class="strategy-phase pl-12 md:pl-16">                    <div class="phase-marker"><i data-lucide="shield" class="w-6 h-6 text-slate-500"></i></div>                    <div class="mb-8"><h2 class="text-3xl font-bold">국면 3: 버블 플레이 & 필드 압축</h2><p class="text-slate-500 font-medium">10/19 (Day 3)</p></div>                     <div class="mb-4 bg-indigo-50 border-l-4 border-indigo-400 p-4 rounded-r-lg">                        <div class="flex">                            <div class="flex-shrink-0"><i data-lucide="info" class="h-5 w-5 text-indigo-500"></i></div>                            <div class="ml-3"><p class="text-sm text-indigo-700"><strong>Day 3 요약:</strong> 하루 동안 <strong>버블 플레이 → 1차 탈락 웨이브 → 중반부 필드 안정기</strong>로 국면이 빠르게 전환되는 가장 역동적인 날입니다. 상황 변화에 민첩하게 대응해야 합니다.</p></div>                        </div>                    </div>                    <div class="space-y-6">                        <!-- Bubble Sub-phase 1: Before Bubble -->                        <div class="bg-white p-6 rounded-lg border">                            <h4 class="font-bold text-xl mb-3">3A: 버블 직전 (Day 3 초반)</h4>                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-green-600 mt-1">낮음</p></div>                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-orange-500 mt-1">매우 낮음</p></div>                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">팀 재정비</p></div>                            </div>                            <p class="text-slate-600 mb-4">키 플레이어들을 포함한 대부분의 선수들이 극도로 소극적이 되어, 팀이 재정비할 수 있는 가장 여유로운 시간입니다. 액션 플랜은 장비 점검, 데이터 백업 등입니다.</p>                        </div>                        <!-- Bubble Sub-phase 2: The Bubble -->                        <div class="bg-white p-6 rounded-lg border">                            <h4 class="font-bold text-xl mb-3">3B: 버블 (Day 3 중반)</h4>                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-red-600 mt-1">최상</p></div>                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-green-600 mt-1">최상</p></div>                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">모든 올인 촬영</p></div>                            </div>                            <p class="text-slate-600 mb-4">토너먼트의 클라이맥스. 이 순간은 어떤 선수가 탈락하든 그 자체가 중요한 스토리이므로, 키 플레이어 여부와 관계없이 모든 올인 상황을 촬영합니다.</p>                            <div class="mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-md">                               <div class="flex">                                   <div class="flex-shrink-0">                                       <i data-lucide="alert-triangle" class="h-5 w-5 text-yellow-500"></i>                                   </div>                                   <div class="ml-3">                                       <p class="font-bold text-yellow-800">경고: 버추얼 테이블 처리 불가</p>                                       <div class="mt-2 text-sm text-yellow-700">                                           <p>버블 상황의 동시성과 속도로 인해, 현재의 버추얼 테이블 시스템으로는 실시간 방송 대응이 불가능합니다.</p>                                       </div>                                   </div>                               </div>                           </div>                        </div>                        <!-- Bubble Sub-phase 3: After Bubble -->                        <div class="bg-white p-6 rounded-lg border">                            <h4 class="font-bold text-xl mb-3">3C: 버블 직후 ~ 필드 압축 (Day 3 후반)</h4>                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-yellow-600 mt-1">중간</p></div>                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-yellow-500 mt-1">중간</p></div>                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">키 플레이어 스토리 심화</p></div>                            </div>                            <p class="text-slate-600 mb-4">1차 탈락 웨이브가 끝나고 필드가 안정되는 시점. 키 플레이어들은 파이널 테이블을 목표로 본격적인 스택 빌딩을 시작하며, 이 구간에서 어떤 키 플레이어가 칩을 모으는지가 후반부의 중요 스토리 라인이 됩니다.</p>                        </div>                    </div>                </div>                 <div class="strategy-phase pl-12 md:pl-16">                    <div class="phase-marker"><i data-lucide="trophy" class="w-6 h-6 text-slate-500"></i></div>                    <div class="mb-8"><h2 class="text-3xl font-bold">국면 4: 파이널을 향한 경쟁</h2><p class="text-slate-500 font-medium">10/20 (Day 4)</p></div>                     <div class="mb-4 bg-indigo-50 border-l-4 border-indigo-400 p-4 rounded-r-lg">                        <div class="flex">                            <div class="flex-shrink-0"><i data-lucide="info" class="h-5 w-5 text-indigo-500"></i></div>                            <div class="ml-3"><p class="text-sm text-indigo-700"><strong>Day 4 요약:</strong> 초반에는 새로운 키 플레이어 후보가 등장하며 필드가 재편되고, 후반으로 갈수록 파이널 테이블 진출을 위한 키 플레이어들의 치열한 경쟁이 펼쳐집니다.</p></div>                        </div>                    </div>                    <div class="space-y-6">                        <!-- Phase 4A -->                        <div class="bg-white p-6 rounded-lg border">                            <h4 class="font-bold text-xl mb-3">4A: 신규 키 플레이어 등장 (Day 4 초중반)</h4>                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-yellow-600 mt-1">중간</p></div>                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-yellow-500 mt-1">중간</p></div>                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">확장된 키 플레이어 추적</p></div>                            </div>                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">                                <div>                                    <h5 class="font-bold text-lg mb-2 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2 text-emerald-600"></i>상황 분석</h5>                                    <div class="p-4 rounded-lg border bg-slate-50">                                        <div class="flex items-center justify-around">                                            <div class="text-center">                                                <i data-lucide="users" class="w-10 h-10 mx-auto text-slate-500"></i>                                                <p class="mt-2 font-semibold text-sm">기존 키 플레이어</p>                                            </div>                                            <i data-lucide="plus" class="w-8 h-8 text-slate-400"></i>                                            <div class="text-center">                                                <i data-lucide="user-plus" class="w-10 h-10 mx-auto text-amber-500"></i>                                                <p class="mt-2 font-semibold text-sm">신규 키 플레이어</p>                                                <p class="text-xs text-slate-500">(칩 리더 등)</p>                                            </div>                                        </div>                                        <p class="text-xs text-center text-slate-600 mt-4">                                            기존 키 플레이어 외에 새로운 후보들이 이야기의 중심으로 떠오르는 시기입니다.                                        </p>                                    </div>                                </div>                                <div>                                    <h5 class="font-bold text-lg mb-2 flex items-center"><i data-lucide="list-checks" class="w-5 h-5 mr-2 text-emerald-600"></i>액션 플랜</h5>                                     <div class="p-4 rounded-lg border bg-slate-50 space-y-4">                                        <div class="flex items-start">                                            <i data-lucide="list-plus" class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0"></i>                                            <div>                                                <h6 class="font-semibold">후보군 확장 및 공유</h6>                                                <p class="text-sm text-slate-600">새로운 키 플레이어 후보를 리스트업하고 팀에 공유합니다.</p>                                            </div>                                        </div>                                        <div class="flex items-start">                                            <i data-lucide="scale" class="w-6 h-6 mr-3 text-emerald-600 flex-shrink-0"></i>                                            <div>                                                <h6 class="font-semibold">균형 있는 촬영</h6>                                                <p class="text-sm text-slate-600">기존과 신규 키 플레이어의 서사를 균형있게 구축합니다.</p>                                            </div>                                        </div>                                     </div>                                </div>                            </div>                        </div>                        <!-- Phase 4B -->                        <div class="bg-white p-6 rounded-lg border">                            <h4 class="font-bold text-xl mb-3">4B: 파이널 테이블 진출 경쟁 (Day 4 후반)</h4>                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">업무 강도</h4><p class="text-2xl font-bold text-red-600 mt-1">높음</p></div>                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">콘텐츠 효율</h4><p class="text-2xl font-bold text-green-600 mt-1">높음</p></div>                                <div class="kpi-card text-center"><h4 class="font-bold text-sm text-slate-500">핵심 목표</h4><p class="text-lg font-bold text-sky-600 mt-2">모든 탈락자 촬영</p></div>                            </div>                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">                                <div>                                    <h5 class="font-bold text-lg mb-2 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2 text-emerald-600"></i>상황 분석</h5>                                    <div class="p-4 rounded-lg border bg-slate-50 text-center">                                        <i data-lucide="flag" class="w-12 h-12 mx-auto text-indigo-500"></i>                                        <p class="font-bold text-lg mt-2">파이널 테이블이 눈앞</p>                                        <div class="flex justify-center items-center space-x-4 my-4">                                            <div class="text-center">                                                <i data-lucide="dollar-sign" class="w-8 h-8 mx-auto text-red-500 animate-pulse"></i>                                                <p class="text-sm mt-1">페이 점프 압박</p>                                            </div>                                            <i data-lucide="arrow-right" class="w-6 h-6 text-slate-400"></i>                                            <div class="text-center">                                                <i data-lucide="user-x" class="w-8 h-8 mx-auto text-red-500"></i>                                                <p class="text-sm mt-1">모든 탈락이 중요</p>                                            </div>                                        </div>                                        <p class="text-sm text-slate-600 mt-4">                                            모든 탈락이 키 플레이어 서사에 중요한 변수가 되는, 압박감이 극대화되는 구간입니다.                                        </p>                                    </div>                                </div>                                <div>                                    <h5 class="font-bold text-lg mb-2 flex items-center"><i data-lucide="list-checks" class="w-5 h-5 mr-2 text-emerald-600"></i>액션 플랜: 전략 전환</h5>                                    <div class="p-4 rounded-lg border bg-slate-50">                                        <h6 class="font-semibold text-center mb-3">촬영 목표 변경: '선별'에서 '전체'로</h6>                                        <div class="flex items-center justify-around">                                            <div class="text-center p-2 border-2 border-dashed rounded-lg">                                                <p class="font-bold text-sm text-slate-600">이전</p>                                                <i data-lucide="users" class="w-10 h-10 mx-auto my-2 text-slate-500"></i>                                                <p class="text-xs">선별된 키 플레이어</p>                                            </div>                                            <i data-lucide="arrow-right-circle" class="w-8 h-8 text-emerald-500 flex-shrink-0 mx-2"></i>                                            <div class="text-center p-2 bg-emerald-100 border-2 border-emerald-400 rounded-lg">                                                <p class="font-bold text-sm text-emerald-800">전환 후</p>                                                <i data-lucide="user-x" class="w-10 h-10 mx-auto my-2 text-emerald-700"></i>                                                <p class="text-xs font-semibold">모든 탈락 상황</p>                                            </div>                                        </div>                                        <div class="mt-4 pt-4 border-t">                                            <p class="text-sm text-slate-600">키 플레이어의 생존 여부와 최종 FT 구도를 확정하기 위해, <strong>'모든 탈락 상황'</strong>을 촬영하는 것으로 목표를 변경합니다.</p>                                            <ul class="list-disc list-inside space-y-1 text-sm text-slate-600 mt-2 pl-2">                                                <li>탈락 핸드, 상대, 보드 상황을 명확히 기록하여 키 플레이어의 최종 서사를 완성합니다.</li>                                            </ul>                                        </div>                                    </div>                                </div>                            </div>                        </div>                    </div>                </div>            </div>        </section>    </div>
+    <script>        lucide.createIcons();    </script></body></html>
 
